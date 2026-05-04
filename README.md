@@ -1,29 +1,12 @@
 # 🛒 Mini E-Commerce Platform
 
-<p align="center">
-  <b>A full-stack modern e-commerce system with user and admin functionality</b>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Frontend-Angular-red?style=for-the-badge&logo=angular" />
-  <img src="https://img.shields.io/badge/Backend-Node.js-green?style=for-the-badge&logo=node.js" />
-  <img src="https://img.shields.io/badge/Database-Supabase-3FCF8E?style=for-the-badge&logo=supabase" />
-  <img src="https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css" />
-  <img src="https://img.shields.io/badge/API-Swagger-orange?style=for-the-badge&logo=swagger" />
-</p>
-
----
-
 ## 🚀 Live Demo
 
 🔗 **Frontend:**  
-https://mini-ecommerce-frontend-chi.vercel.app  
+https://mini-e-commerce-platform-two.vercel.app
 
 🔗 **Backend API:**  
-https://mini-ecommerce-backend-rkt8.onrender.com/api/v1  
-
-📄 **API Docs (Swagger):**  
-https://mini-ecommerce-backend-rkt8.onrender.com/api-docs  
+https://mini-e-commerce-platform-backend.onrender.com/api/v1 
 
 ---
 
@@ -119,7 +102,7 @@ CLIENT_URL=http://localhost:4200
 ### 🔹 Connect Frontend to Backend
 
 ```ts
-apiUrl: 'https://mini-ecommerce-backend.onrender.com/api/v1'
+apiUrl: 'https://mini-e-commerce-platform-backend.onrender.com/api/v1'
 ```
 
 ---
@@ -190,16 +173,3 @@ apiUrl: 'https://mini-ecommerce-backend.onrender.com/api/v1'
 - ⭐ Product reviews & ratings
 - 📧 Email notifications
 - 🧠 Recommendation system
-
----
-
-## 👨‍💻 Author
-
-**Christian Porcal**  
-📧 porcalchristian36@gmail.com  
-
----
-
-## ⭐ Show Your Support
-
-If you like this project, consider giving it a ⭐ on GitHub!
