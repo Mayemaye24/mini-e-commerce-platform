@@ -17,6 +17,7 @@ const allowedOrigins = [
   'http://localhost:4200',
   'http://localhost:3000',
   'https://mini-ecommerce-frontend-chi.vercel.app',
+  'https://mini-e-commerce-platform-two.vercel.app',
 ];
 
 app.use(
