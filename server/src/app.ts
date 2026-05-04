@@ -12,7 +12,7 @@ const app = express();
 // ✅ Security headers
 app.use(helmet());
 
-// ✅ SIMPLE & RELIABLE CORS (no callback)
+// ✅ CORS FIX (supports localhost + deployed frontend)
 const allowedOrigins = [
   'http://localhost:4200',
   'http://localhost:3000',
@@ -22,16 +22,19 @@ const allowedOrigins = [
 
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: (origin, callback) => {
+      // Allow requests without origin (Postman, mobile apps, etc.)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      } else {
+        return callback(new Error(`CORS not allowed for origin: ${origin}`));
+      }
+    },
     credentials: true,
   })
 );
-
-// ✅ CRITICAL: handle preflight requests globally
-app.options('*', cors({
-  origin: allowedOrigins,
-  credentials: true,
-}));
 
 // ✅ Middlewares
 app.use(morgan('dev'));
