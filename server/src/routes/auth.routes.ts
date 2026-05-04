@@ -21,10 +21,10 @@ const router = Router();
  *             properties:
  *               name:
  *                 type: string
- *                 example: Christian
+ *                 example: Mariel
  *               email:
  *                 type: string
- *                 example: christian@example.com
+ *                 example: mariel@example.com
  *               password:
  *                 type: string
  *                 example: 123456
@@ -51,7 +51,7 @@ router.post('/register', register);
  *             properties:
  *               email:
  *                 type: string
- *                 example: christian@example.com
+ *                 example: mariel@example.com
  *               password:
  *                 type: string
  *                 example: 123456
